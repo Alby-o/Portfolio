@@ -9,7 +9,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
+	font-weight: 300;
+	font-size: 1.2em;
 	color: #333;
 	background: #EDEDED;
 }
@@ -150,6 +151,11 @@ section h2 {
 	margin: 50px 0 20px 0;
 }
 
+section h3 {
+	font-size: 2em;
+	margin: 20px 0 10px 0;
+}
+
 .down-icon-container {
 	text-align: center;
 }
@@ -173,6 +179,35 @@ section h2 {
 }
 
 .portrait-container img {
+	width: 100%;
+}
+
+/* Projects */
+#projects article {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #BBB;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+#projects article:last-of-type {
+	border-bottom: none;
+}
+
+#projects article .img-container {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#projects article .content {
+	width: 70%;
+}
+
+.img-container img {
+	border-radius: 20px;
 	width: 100%;
 }
 
