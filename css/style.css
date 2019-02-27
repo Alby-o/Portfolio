@@ -293,7 +293,7 @@ section h3 {
 }
 
 .code {
-	background-image: url("../image/code-background.png");
+	background-image: url("../image/code-background.jpg");
 }
 
 .galaxy {
@@ -302,6 +302,10 @@ section h3 {
 
 .portrait {
 	background-image: url("../image/portrait.jpg");
+}
+
+.camp {
+	background-image: url("../image/camp.jpg");
 }
 
 /*FOOTER*/
