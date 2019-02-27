@@ -38,6 +38,8 @@ $('a[href*="#"]')
 // });
 
 $(document).ready(function() {
+  AOS.init();
+  
   $(window).on('scroll', function (e){
     if($(this).scrollTop() > 100) {
       $(".floating-nav").fadeIn();
