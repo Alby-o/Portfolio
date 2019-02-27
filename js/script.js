@@ -1,3 +1,5 @@
+AOS.init();
+
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -29,14 +31,3 @@ $('a[href*="#"]')
       }
     }
   });
-
-// $("body").scroll(function(){
-//   if($(this).scrollTop() === 0){
-//     alert("top");   
-//   }
-//   console.log($(this).scrollTop());
-// });
-
-$(document).ready(function() {
-  AOS.init();
-});
