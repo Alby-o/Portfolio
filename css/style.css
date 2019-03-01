@@ -97,6 +97,7 @@ header {
 	background: white;
 	padding: 30px 10px 30px 40px;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -105,7 +106,12 @@ header h1 {
 	display: inline-block;
 	margin: 0;
 	font-size: 50px;
+	padding-right: 30px;
 	margin-right: auto;
+}
+
+header nav a {
+	padding: 0 20px 0 0;
 }
 
 /*NAV*/
@@ -170,6 +176,7 @@ section h3 {
 
 #about .content {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -186,6 +193,7 @@ section h3 {
 #projects article {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	border-bottom: 1px solid #BBB;
 	justify-content: space-between;
 	margin: 20px 0;
@@ -217,6 +225,7 @@ section h3 {
 	padding: 0;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 
 }
@@ -370,5 +379,45 @@ footer {
 		border-radius: 50%;
 		background: #333;
 		transform: rotate(0deg);
+	}
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+	header h1 {
+		font-size: 40px;
+	}
+
+	.list-nav ul {
+		justify-content: center;
+	}
+
+	#projects article {
+		flex-direction: column;
+	}
+
+	#projects article .content {
+		width: 100%;
+	}
+
+	#projects article .img-container {
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	#projects article .img-container img {
+		width: 50%;
+		margin: 0;
+	}
+
+	section h2 {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	header h1 {
+		font-size: 30px;
 	}
 }
